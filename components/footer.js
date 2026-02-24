@@ -11,7 +11,7 @@
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
       <!-- Copyright -->
       <p class="text-brand-dark text-xs tracking-wide order-2 md:order-1">
-        © 2026 return home • spiritual trauma counseling
+        © 2026 return home • spiritual trauma coaching
       </p>
 
       <!-- Brand Name -->

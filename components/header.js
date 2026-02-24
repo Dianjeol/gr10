@@ -14,7 +14,7 @@
     { href: './index.html', label: 'Welcome' },
     { href: './session.html', label: 'The Session' },
     { href: './expectations.html', label: 'Expectations' },
-    { href: './about.html', label: 'About Me' },
+    { href: './about.html', label: 'About' },
   ];
 
   const navLinksHTML = navLinks.map(link => {

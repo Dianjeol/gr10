@@ -5,9 +5,11 @@
  * Automatically highlights the current page based on the filename.
  * 
  * Usage: <div id="site-header"></div>
- *        <script src="./components/header.js"></script>
+ *        <script src="components/header.js"></script>
  */
 (function() {
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
   const navLinks = [
     { href: 'index.html', label: 'Welcome' },
     { href: 'approach.html', label: 'The Approach' },

@@ -4,7 +4,7 @@
  * Renders the site-wide footer with copyright, brand name, and legal links.
  * 
  * Usage: <footer id="site-footer"></footer>
- *        <script src="./components/footer.js"></script>
+ *        <script src="components/footer.js"></script>
  */
 (function() {
   const footerHTML = `

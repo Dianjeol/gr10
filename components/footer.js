@@ -4,7 +4,7 @@
  * Renders the site-wide footer with copyright, brand name, and legal links.
  * 
  * Usage: <footer id="site-footer"></footer>
- *        <script src="components/footer.js"></script>
+ *        <script src="./components/footer.js"></script>
  */
 (function() {
   const footerHTML = `
@@ -21,8 +21,8 @@
 
       <!-- Legal Links -->
       <div class="flex gap-6 text-xs tracking-wide order-3">
-        <a href="impressum.html" class="text-brand-dark underline underline-offset-2 hover:text-brand transition-colors hover:underline hover:underline-offset-4">Impressum</a>
-        <a href="impressum.html#datenschutz" class="text-brand-dark underline underline-offset-2 hover:text-brand transition-colors hover:underline hover:underline-offset-4">Datenschutz</a>
+        <a href="./impressum.html" class="text-brand-dark underline underline-offset-2 hover:text-brand transition-colors hover:underline hover:underline-offset-4">Impressum</a>
+        <a href="./impressum.html#datenschutz" class="text-brand-dark underline underline-offset-2 hover:text-brand transition-colors hover:underline hover:underline-offset-4">Datenschutz</a>
       </div>
     </div>
   `;

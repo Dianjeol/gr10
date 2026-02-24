@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 137.5%;">
+<head>
+  <base href="/v10/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gentle Return – Trauma-Informed Coaching</title>
+  <meta name="description" content="Soul-led, trauma-informed coaching with Helen O'Donohoe. Reconnect with your inner wisdom, untangle inherited patterns, and return — gently — to yourself.">
+  <meta name="robots" content="noindex, nofollow">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="./tailwind-config.js"></script>
+  <style>
+    .top-gradient {
+      background: linear-gradient(to bottom, #EDF4FB, #BCD7F0);
+    }
+
+    /* Hero fade-in */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      animation: fadeUp 1.1s ease both;
+    }
+    .fade-up-delay {
+      animation: fadeUp 1.1s ease 0.4s both;
+    }
+
+    /* Ornamental rule */
+    .ornament-rule {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+    }
+    .ornament-rule::before,
+    .ornament-rule::after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 56px;
+      background: #a3c4d1;
+    }
+
+    /* Pillar dividers */
+    .pillar-sep {
+      display: inline-block;
+      width: 1px;
+      height: 28px;
+      background: #a3c4d1;
+      vertical-align: middle;
+      opacity: 0.7;
+    }
+
+    /* Quote ornament */
+    .quote-ornament {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 5rem;
+      line-height: 0.6;
+      color: #a3c4d1;
+      user-select: none;
+    }
+  </style>
+
+</head>
+<body class="bg-white text-brand-dark font-body antialiased">
+
+  <div class="top-gradient">
+    <!-- ===================== HEADER / NAVIGATION ===================== -->
+    <header>
+      <div id="site-header"></div>
+      <script src="./components/header.js"></script>
+    </header>
+
+    <!-- ===================== HERO SECTION TAGLINE ===================== -->
+    <section class="text-center">
+      <div class="max-w-2xl mx-auto px-6 pt-4 pb-12">
+
+        <!-- Tagline -->
+        <p class="font-heading text-brand-dark italic text-[2rem] md:text-[2.6rem] leading-[1.25] fade-up">
+          A gentle return
+        </p>
+        <p class="font-heading text-brand italic text-[1.6rem] md:text-[2rem] leading-snug mt-1 fade-up-delay">
+          to yourself.
+        </p>
+
+        <!-- Ornamental separator -->
+        <div class="ornament-rule mt-7 fade-up-delay">
+          <span class="font-heading italic text-[11px] tracking-[0.3em] text-brand/70 uppercase">Helen O'Donohoe</span>
+        </div>
+
+        <p class="mt-5 font-body text-[13px] tracking-[0.25em] text-brand-dark/60 uppercase fade-up-delay">
+          spiritual trauma counseling
+        </p>
+
+      </div>
+    </section>
+  </div>
+
+  <section class="text-center pb-0">
+    <!-- Hero Image with wave clip-paths -->
+    <div class="relative w-full">
+      <!-- Top wave overlay (hero-bg color covering the top of the image) -->
+      <div class="absolute top-0 left-0 w-full z-10" style="height: 80px;">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="w-full h-full block">
+          <path d="M0,0 L1440,0 L1440,40 C1080,70 1080,10 720,40 C360,70 360,10 0,40 Z" fill="#BCD7F0"/>
+          <!-- Thin blue line at the edge of the wave -->
+          <path d="M1440,40 C1080,70 1080,10 720,40 C360,70 360,10 0,40" fill="none" stroke="#a3c4d1" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <!-- The image (increased height and straight bottom) -->
+      <img 
+        src="./images/welcome-image.webp" 
+        alt="Serene mountain lake at dawn with misty peaks and a small island" 
+        class="w-full h-[450px] sm:h-[500px] md:h-[600px] object-cover object-center"
+      >
+    </div>
+  </section>
+
+  <!-- ===================== WELCOME SECTION ===================== -->
+  <section id="welcome" class="bg-soft-blue py-16 md:py-24 text-center">
+    <div class="max-w-2xl mx-auto px-8 md:px-12">
+
+      <!-- Section label -->
+      <p class="font-body text-[11px] tracking-[0.35em] text-brand/70 uppercase mb-8">A Space to Land</p>
+
+      <p class="font-heading text-brand-dark italic text-[1.35rem] md:text-[1.6rem] leading-relaxed mb-8">
+        To open to transformation and healing, we first need to feel safe and seen — and to sense where we can gently open to our own vulnerability.
+      </p>
+
+      <div class="ornament-rule mb-8">
+        <span></span>
+      </div>
+
+      <p class="text-brand-dark text-[15px] md:text-[16px] leading-relaxed font-medium opacity-80">
+        This begins with recognising a personal wish for change or healing. Each person's experience and nervous system responses are unique, and this first step calls for particular care and clarity.
+      </p>
+
+      <p class="text-brand-dark text-[15px] md:text-[16px] leading-relaxed font-medium opacity-80 mt-5">
+        My intention is to meet you where you are, offer a space of attentive listening, and explore together whether this work feels like a good fit — and how we might proceed.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ===================== WAVE DIVIDER: White → Blue ===================== -->
+  <div class="relative w-full bg-section-blue" style="height: 100px;">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="absolute top-0 left-0 w-full h-full block">
+      <path d="M0,0 L1440,0 L1440,50 C1080,80 1080,20 720,50 C360,80 360,20 0,50 Z" fill="#E2EEF9"/>
+      <!-- Thin wave line -->
+      <path d="M0,50 C360,20 360,80 720,50 C1080,20 1080,80 1440,50" fill="none" stroke="#a3c4d1" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <!-- ===================== PILLARS / CTA SECTION ===================== -->
+  <section class="bg-section-blue text-center py-16 md:py-24">
+    <div class="max-w-2xl mx-auto px-6">
+
+      <!-- Section label -->
+      <p class="font-body text-[11px] tracking-[0.35em] text-brand/70 uppercase mb-8">The Foundation of This Work</p>
+
+      <!-- Three Pillars -->
+      <div class="flex items-center justify-center gap-6 md:gap-10 mb-3">
+        <div class="text-center">
+          <p class="font-heading text-brand text-[1.1rem] md:text-[1.3rem] tracking-[0.18em] uppercase">Safety</p>
+        </div>
+        <span class="pillar-sep"></span>
+        <div class="text-center">
+          <p class="font-heading text-brand text-[1.1rem] md:text-[1.3rem] tracking-[0.18em] uppercase">Presence</p>
+        </div>
+        <span class="pillar-sep"></span>
+        <div class="text-center">
+          <p class="font-heading text-brand text-[1.1rem] md:text-[1.3rem] tracking-[0.18em] uppercase">Reclamation</p>
+        </div>
+      </div>
+
+      <p class="font-body text-[13px] text-brand-dark/60 tracking-wide mt-6 mb-10">
+        A space of deep listening. An unhurried pace. Your inner wisdom, honoured.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="approach.html" class="inline-block border border-brand text-brand font-heading text-sm uppercase tracking-widest px-8 py-3 rounded hover:bg-brand hover:text-white transition-colors duration-300">
+          Explore the Approach
+        </a>
+        <a href="session.html" class="inline-block text-brand-dark/70 font-body text-xs tracking-[0.2em] uppercase hover:text-brand transition-colors duration-300">
+          The Session →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== WAVE DIVIDER: Blue → White ===================== -->
+  <div class="relative w-full bg-soft-blue" style="height: 100px;">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="absolute top-0 left-0 w-full h-full block">
+      <path d="M0,0 L1440,0 L1440,50 C1080,80 1080,20 720,50 C360,80 360,20 0,50 Z" fill="#BCD7F0"/>
+      <!-- Thin wave line -->
+      <path d="M0,50 C360,20 360,80 720,50 C1080,20 1080,80 1440,50" fill="none" stroke="#a3c4d1" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <!-- ===================== QUOTE SECTION ===================== -->
+  <section id="offerings" class="bg-soft-blue text-center py-20 md:py-28 relative">
+    <div class="max-w-xl mx-auto px-6">
+
+      <!-- Large ornamental opening quote -->
+      <div class="quote-ornament mb-2" aria-hidden="true">"</div>
+
+      <p class="font-heading text-brand-dark italic text-[1.3rem] md:text-[1.55rem] leading-relaxed px-4">
+        Transformation and healing unfold most naturally when there is a sense of safety and being seen, and when we can listen inwardly to where opening feels possible.
+      </p>
+
+      <div class="ornament-rule mt-8">
+        <span class="font-body text-[11px] tracking-[0.3em] text-brand/60 uppercase">Helen O'Donohoe</span>
+      </div>
+
+    </div>
+
+    <!-- Bottom Wave overlay connecting content to footer -->
+    <div class="absolute bottom-0 left-0 w-full z-10" style="height: 100px;">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="w-full h-full block">
+        <!-- Footer color fill at bottom -->
+        <path d="M0,50 C360,20 360,80 720,50 C1080,20 1080,80 1440,50 L1440,100 L0,100 Z" fill="#D7EBFE"/>
+        <!-- Thin wave line -->
+        <path d="M0,50 C360,20 360,80 720,50 C1080,20 1080,80 1440,50" fill="none" stroke="#a3c4d1" stroke-width="1.5"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="site-footer" class="bg-footer-blue py-10" style="color: #5F94BA;"></footer>
+  <script src="./components/footer.js"></script>
+
+</body>
+</html>

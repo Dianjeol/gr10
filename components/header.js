@@ -13,7 +13,7 @@
   const navLinks = [
     { href: './index.html', label: 'Welcome' },
     { href: './session.html', label: 'The Session' },
-    { href: './expectations.html', label: 'Expectations' },
+    { href: './the-space.html', label: 'The Space' },
     { href: './about.html', label: 'About' },
   ];
 

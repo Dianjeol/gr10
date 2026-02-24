@@ -26,28 +26,6 @@
       width: 48px;
       background: #a3c4d1;
     }
-
-    /* Chevron list */
-    .chevron-list li {
-      padding-left: 1.4rem;
-      position: relative;
-    }
-    .chevron-list li::before {
-      content: '›';
-      position: absolute;
-      left: 0;
-      color: #4a7c8f;
-      font-size: 1.1rem;
-      line-height: 1.5;
-    }
-
-    /* Callout box */
-    .callout-box {
-      background: rgba(255,255,255,0.45);
-      border-left: 3px solid #a3c4d1;
-      border-radius: 0 12px 12px 0;
-      padding: 1.5rem 1.75rem;
-    }
   </style>
 
 </head>
@@ -61,7 +39,6 @@
 
   <!-- ===================== HERO SECTION ===================== -->
   <section class="bg-hero-bg text-center pb-0 relative">
-    <!-- Hero Image with wave clip-paths -->
     <div class="relative w-full h-[450px] sm:h-[550px] md:h-[650px]">
       
       <!-- Top wave overlay -->
@@ -110,81 +87,92 @@
   <section class="bg-section-blue py-16 md:py-24">
     <div class="max-w-4xl mx-auto px-8 md:px-12 text-brand-dark text-[16px] leading-relaxed font-medium">
       
-      <!-- Section label & intro -->
+      <!-- Section intro -->
       <div class="text-center mb-16">
         <p class="font-body text-[11px] tracking-[0.35em] text-brand/70 uppercase mb-5">Clarity & Care</p>
         <p class="font-heading italic text-xl md:text-2xl text-brand leading-relaxed max-w-2xl mx-auto">
-          In this work, clarity and boundaries are essential cues of safety. Naming the scope of our relationship helps prevent the boundary violations so often felt in high-control environments.
+          Clarity and boundaries are essential cues of safety. Naming the scope of our relationship helps prevent the boundary violations so often felt in high-control environments.
         </p>
         <div class="ornament-rule mt-8">
           <span></span>
         </div>
       </div>
 
-      <div class="space-y-16">
-        
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
         <!-- Our Shared Understanding -->
-        <div>
-          <h3 class="font-heading text-brand text-2xl tracking-[0.1em] uppercase mb-4">
+        <div class="bg-white/30 p-8 rounded-2xl border border-brand/5">
+          <h3 class="font-heading text-brand text-xl tracking-[0.1em] uppercase mb-4">
             Our Shared Understanding
           </h3>
-          <p class="opacity-80">
-            Unlike high-control systems that demand compliance, this space is built on mutual respect and transparency. Everything here is co-created — offered, never imposed.
+          <p class="opacity-80 text-[15px] leading-relaxed">
+            Unlike high-control systems that demand compliance, this space is built on mutual respect and transparency. Everything is co-created — offered, never imposed.
           </p>
         </div>
 
         <!-- What I Offer -->
-        <div>
-          <h3 class="font-heading text-brand text-2xl tracking-[0.1em] uppercase mb-5">
+        <div class="bg-white/30 p-8 rounded-2xl border border-brand/5">
+          <h3 class="font-heading text-brand text-xl tracking-[0.1em] uppercase mb-5">
             What I Offer
           </h3>
-          <ul class="space-y-3 opacity-80 chevron-list">
-            <li>A non-judgmental, confidential space.</li>
-            <li>Trauma-informed listening and somatic mirroring.</li>
-            <li>A partnership in your journey of reclamation.</li>
-            <li>Consistent pacing and clear communication.</li>
+          <ul class="space-y-3 opacity-80 text-[15px]">
+            <li class="flex gap-3 items-start">
+              <span class="text-brand flex-shrink-0">›</span>
+              <span>A non-judgmental, confidential space</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-brand flex-shrink-0">›</span>
+              <span>Trauma-informed listening and somatic mirroring</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-brand flex-shrink-0">›</span>
+              <span>A partnership in your journey of reclamation</span>
+            </li>
+            <li class="flex gap-3 items-start">
+              <span class="text-brand flex-shrink-0">›</span>
+              <span>Consistent pacing and clear communication</span>
+            </li>
           </ul>
         </div>
+      </div>
 
-        <!-- What This Is Not -->
-        <div>
-          <h3 class="font-heading text-brand text-2xl tracking-[0.1em] uppercase mb-5">
-            What This Is Not
-          </h3>
-          <div class="callout-box space-y-5 opacity-80">
-            <p>
-              <strong class="font-semibold text-brand-dark">Not Clinical Psychotherapy:</strong> I do not diagnose or treat mental illness. This work is a supportive complement to, not a replacement for, clinical care.
-            </p>
-            <p>
-              <strong class="font-semibold text-brand-dark">Not Crisis Support:</strong> If you are in acute distress, please contact emergency services or a crisis line.
-            </p>
+      <!-- What This Is Not -->
+      <div class="bg-brand-light/30 border-l-4 border-brand/20 p-8 rounded-r-2xl mb-16">
+        <h3 class="font-heading text-brand text-xl tracking-[0.1em] uppercase mb-4">
+          What This Is Not
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-[15px] opacity-80">
+          <p>
+            <strong class="font-semibold text-brand-dark">Not Clinical Psychotherapy:</strong> I do not diagnose or treat mental illness. This work is a supportive complement to, not a replacement for, clinical care.
+          </p>
+          <p>
+            <strong class="font-semibold text-brand-dark">Not Crisis Support:</strong> If you are in acute distress, please contact emergency services or a crisis line.
+          </p>
+        </div>
+      </div>
+
+      <!-- Your Role & Agency -->
+      <div class="max-w-2xl mx-auto">
+        <h3 class="font-heading text-brand text-2xl tracking-[0.1em] uppercase mb-6 text-center">
+          Your Role & Agency
+        </h3>
+        <p class="opacity-80 mb-8 text-center font-heading italic text-lg text-brand">
+          This is a collaborative process. This space honours your autonomy — fully, always.
+        </p>
+        <div class="space-y-5">
+          <div class="flex gap-5 items-start bg-white/40 p-5 rounded-xl border border-brand/5">
+            <span class="font-heading font-bold text-brand text-xl leading-none flex-shrink-0 mt-0.5">1.</span>
+            <p class="opacity-80 text-[15px]">You have the right to pause, stop, or redirect our session at any time.</p>
+          </div>
+          <div class="flex gap-5 items-start bg-white/40 p-5 rounded-xl border border-brand/5">
+            <span class="font-heading font-bold text-brand text-xl leading-none flex-shrink-0 mt-0.5">2.</span>
+            <p class="opacity-80 text-[15px]">Your self-responsibility is the foundation of our work together.</p>
+          </div>
+          <div class="flex gap-5 items-start bg-white/40 p-5 rounded-xl border border-brand/5">
+            <span class="font-heading font-bold text-brand text-xl leading-none flex-shrink-0 mt-0.5">3.</span>
+            <p class="opacity-80 text-[15px]">We move only where opening feels possible and safe for you.</p>
           </div>
         </div>
-
-        <!-- Your Role & Agency -->
-        <div>
-          <h3 class="font-heading text-brand text-2xl tracking-[0.1em] uppercase mb-4">
-            Your Role & Agency
-          </h3>
-          <p class="opacity-80 mb-6">
-            This is a collaborative process. This space honours your autonomy — fully, always.
-          </p>
-          <ul class="space-y-4 opacity-80">
-            <li class="flex gap-4 items-start">
-              <span class="font-heading font-bold text-brand text-lg leading-snug flex-shrink-0">1.</span>
-              <span>You have the right to pause, stop, or redirect our session at any time.</span>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="font-heading font-bold text-brand text-lg leading-snug flex-shrink-0">2.</span>
-              <span>Your self-responsibility is the foundation of our work together.</span>
-            </li>
-            <li class="flex gap-4 items-start">
-              <span class="font-heading font-bold text-brand text-lg leading-snug flex-shrink-0">3.</span>
-              <span>We move only where opening feels possible and safe for you.</span>
-            </li>
-          </ul>
-        </div>
-
       </div>
       
     </div>
@@ -200,7 +188,6 @@
       </svg>
     </div>
 
-    <!-- The image -->
     <img 
       src="./images/offerings-butterfly.webp" 
       alt="Butterfly on flower" 

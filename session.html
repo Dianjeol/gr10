@@ -48,6 +48,30 @@
       color: #a3c4d1;
       user-select: none;
     }
+
+    /* Witness Self highlight card */
+    .witness-card {
+      background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(188,215,240,0.25) 100%);
+      border: 1px solid rgba(163,196,209,0.4);
+      border-radius: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .witness-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(to right, transparent, #4a7c8f, transparent);
+    }
+
+    /* Pillar cards */
+    .pillar-card {
+      border-left: 2px solid #a3c4d1;
+      padding-left: 1.5rem;
+    }
   </style>
 
 </head>
@@ -64,7 +88,7 @@
     <!-- Hero Image with wave clip-paths -->
     <div class="relative w-full h-[450px] sm:h-[550px] md:h-[650px]">
       
-      <!-- Top wave overlay (hero-bg color covering the top of the image) -->
+      <!-- Top wave overlay -->
       <div class="absolute top-0 left-0 w-full z-10" style="height: 80px;">
         <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="w-full h-full block">
           <path d="M0,0 L1440,0 L1440,40 C1080,70 1080,10 720,40 C360,70 360,10 0,40 Z" fill="#cfe0e8"/>
@@ -78,7 +102,7 @@
         alt="Lotus flower" 
         class="w-full h-full object-cover object-center"
       >
-      <!-- Dark gradient overlay to make text readable -->
+      <!-- Dark gradient overlay -->
       <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/30"></div>
 
       <!-- Quote Overlay -->
@@ -106,12 +130,85 @@
     </div>
   </section>
 
-  <!-- ===================== THE SESSION ===================== -->
+  <!-- ===================== THE APPROACH ===================== -->
   <section class="bg-section-blue py-16 md:py-24">
     <div class="max-w-4xl mx-auto px-8 md:px-12 text-brand-dark text-[16px] leading-relaxed font-medium">
       
+      <!-- Intro -->
+      <div class="text-center mb-20">
+        <p class="font-body text-[11px] tracking-[0.35em] text-brand/70 uppercase mb-5">How We Work</p>
+        <p class="text-xl md:text-2xl font-heading italic text-brand leading-relaxed px-4 max-w-2xl mx-auto">
+          Transformation and healing unfold most naturally when there is a sense of safety and being seen.
+        </p>
+        <div class="ornament-rule mt-8">
+          <span></span>
+        </div>
+      </div>
+
+      <!-- ★ THE WITNESS SELF — Highlighted Card ★ -->
+      <div class="witness-card px-8 md:px-12 py-10 md:py-14 mb-20">
+        <div class="flex flex-col md:flex-row gap-8 md:gap-14 items-start">
+          <!-- Left: Icon + Title -->
+          <div class="flex-shrink-0 text-center md:text-left md:w-1/3">
+            <!-- Large decorative symbol -->
+            <div class="font-heading text-brand/30 text-[5rem] leading-none mb-2 select-none" aria-hidden="true">◉</div>
+            <h3 class="font-heading text-brand text-2xl tracking-[0.12em] uppercase">
+              The Witness Self
+            </h3>
+            <div class="h-[2px] w-12 bg-brand/30 mt-3 mx-auto md:mx-0"></div>
+          </div>
+          <!-- Right: Text -->
+          <div class="md:w-2/3 space-y-4">
+            <p class="opacity-85 leading-relaxed">
+              This work is most supportive when there is some capacity for what is often called the <strong class="font-semibold text-brand-dark">Witness Self</strong> — the ability to notice experience while remaining present with it, rather than being completely taken over.
+            </p>
+            <p class="opacity-70 text-[15px] leading-relaxed italic">
+              We gently cultivate this capacity together. In times of deep trauma, it can feel inaccessible. Our shared aim is to slowly rebuild your trust in your own perception.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meeting & Pace — Side by side cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+        <!-- Meeting -->
+        <div class="pillar-card">
+          <h3 class="font-heading text-brand text-xl tracking-[0.1em] uppercase mb-3">
+            Meeting
+          </h3>
+          <p class="opacity-80 text-[15px] leading-relaxed">
+            My intention is to meet you exactly where you are — to offer a safe space of attentive listening. We honour your survival patterns and defences as intelligent responses that once kept you safe.
+          </p>
+        </div>
+
+        <!-- Pace -->
+        <div class="pillar-card">
+          <h3 class="font-heading text-brand text-xl tracking-[0.1em] uppercase mb-3">
+            Pace
+          </h3>
+          <p class="opacity-80 text-[15px] leading-relaxed">
+            Together, we sense whether this work feels like a good fit — and proceed at a pace that honours your nervous system and sacred potential.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== WAVE DIVIDER ===================== -->
+  <div class="relative w-full bg-soft-blue" style="height: 80px;">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="absolute top-0 left-0 w-full h-full block">
+      <path d="M0,0 L1440,0 L1440,40 C1080,70 1080,10 720,40 C360,70 360,10 0,40 Z" fill="#BCD7F0"/>
+      <path d="M0,40 C360,10 360,70 720,40 C1080,10 1080,70 1440,40" fill="none" stroke="#a3c4d1" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <!-- ===================== THE SESSION FLOW ===================== -->
+  <section class="bg-soft-blue py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-8 md:px-12 text-brand-dark text-[16px] leading-relaxed font-medium">
+      
       <!-- Section label -->
-      <p class="font-body text-[11px] tracking-[0.35em] text-brand/70 uppercase text-center mb-12">One-to-One Sessions</p>
+      <p class="font-body text-[11px] tracking-[0.35em] text-brand/70 uppercase text-center mb-6">One-to-One Sessions</p>
 
       <!-- The Offer: Premium block -->
       <div class="bg-white/50 border border-brand/20 px-8 md:px-14 py-10 text-center rounded-2xl mb-20 shadow-sm">
@@ -145,7 +242,7 @@
               <span class="font-body text-[12px] text-brand/60 tracking-wide">15 min</span>
             </div>
             <p class="opacity-80">
-              We begin by arriving. Before opening to story or emotion, we establish a sense of safety in the here and now — through orientation, gentle breathwork, or guided awareness to settle the nervous system.
+              We begin by arriving — establishing a sense of safety through orientation, gentle breathwork, or guided awareness to settle the nervous system.
             </p>
           </div>
         </div>
@@ -161,7 +258,7 @@
               <span class="font-body text-[12px] text-brand/60 tracking-wide">50 min</span>
             </div>
             <p class="opacity-80">
-              Once grounded, we gently turn toward your experience. We work with the Witness Self, moving only as fast as your body feels safe to go, and listening for the wisdom beneath the wounding.
+              Once grounded, we gently turn toward your experience — working with the Witness Self, moving only as fast as your body feels safe to go.
             </p>
           </div>
         </div>
@@ -177,97 +274,11 @@
               <span class="font-body text-[12px] text-brand/60 tracking-wide">10 min</span>
             </div>
             <p class="opacity-80">
-              We conclude by gently returning to the present moment, ensuring you feel regulated and grounded before re-entering your day — integrating any insights discovered during the session.
+              We return to the present moment, ensuring you feel regulated and grounded before re-entering your day.
             </p>
           </div>
         </div>
 
-      </div>
-
-      <!-- ===================== EXPECTATIONS & AGREEMENT ===================== -->
-      <div class="mt-24 pt-16 border-t border-brand/10">
-        <div class="text-center mb-16">
-          <p class="font-body text-[11px] tracking-[0.35em] text-brand/70 uppercase mb-5">Clarity & Care</p>
-          <p class="font-heading italic text-xl md:text-2xl text-brand leading-relaxed max-w-2xl mx-auto">
-            In this work, clarity and boundaries are essential cues of safety. Naming the scope of our relationship helps prevent the boundary violations so often felt in high-control environments.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-          <!-- Our Shared Understanding -->
-          <div class="bg-white/30 p-8 rounded-2xl border border-brand/5">
-            <h3 class="font-heading text-brand text-xl tracking-[0.1em] uppercase mb-4">
-              Our Shared Understanding
-            </h3>
-            <p class="opacity-80 text-sm leading-relaxed">
-              Unlike high-control systems that demand compliance, this space is built on mutual respect and transparency. Everything here is co-created — offered, never imposed.
-            </p>
-          </div>
-
-          <!-- What I Offer -->
-          <div class="bg-white/30 p-8 rounded-2xl border border-brand/5">
-            <h3 class="font-heading text-brand text-xl tracking-[0.1em] uppercase mb-5">
-              What I Offer
-            </h3>
-            <ul class="space-y-3 opacity-80 text-sm">
-              <li class="flex gap-3 items-start">
-                <span class="text-brand">›</span>
-                <span>A non-judgmental, confidential space.</span>
-              </li>
-              <li class="flex gap-3 items-start">
-                <span class="text-brand">›</span>
-                <span>Trauma-informed listening and somatic mirroring.</span>
-              </li>
-              <li class="flex gap-3 items-start">
-                <span class="text-brand">›</span>
-                <span>A partnership in your journey of reclamation.</span>
-              </li>
-              <li class="flex gap-3 items-start">
-                <span class="text-brand">›</span>
-                <span>Consistent pacing and clear communication.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- What This Is Not -->
-        <div class="bg-brand-light/30 border-l-4 border-brand/20 p-8 rounded-r-2xl mb-16">
-          <h3 class="font-heading text-brand text-xl tracking-[0.1em] uppercase mb-4">
-            What This Is Not
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm opacity-80">
-            <p>
-              <strong class="font-semibold text-brand-dark">Not Clinical Psychotherapy:</strong> I do not diagnose or treat mental illness. This work is a supportive complement to, not a replacement for, clinical care.
-            </p>
-            <p>
-              <strong class="font-semibold text-brand-dark">Not Crisis Support:</strong> If you are in acute distress, please contact emergency services or a crisis line.
-            </p>
-          </div>
-        </div>
-
-        <!-- Your Role & Agency -->
-        <div class="max-w-2xl mx-auto">
-          <h3 class="font-heading text-brand text-2xl tracking-[0.1em] uppercase mb-6 text-center">
-            Your Role & Agency
-          </h3>
-          <p class="opacity-80 mb-8 text-center italic">
-            This is a collaborative process. This space honours your autonomy — fully, always.
-          </p>
-          <div class="space-y-6">
-            <div class="flex gap-6 items-start bg-white/40 p-5 rounded-xl border border-brand/5">
-              <span class="font-heading font-bold text-brand text-2xl leading-none">1.</span>
-              <p class="opacity-80">You have the right to pause, stop, or redirect our session at any time.</p>
-            </div>
-            <div class="flex gap-6 items-start bg-white/40 p-5 rounded-xl border border-brand/5">
-              <span class="font-heading font-bold text-brand text-2xl leading-none">2.</span>
-              <p class="opacity-80">Your self-responsibility is the foundation of our work together.</p>
-            </div>
-            <div class="flex gap-6 items-start bg-white/40 p-5 rounded-xl border border-brand/5">
-              <span class="font-heading font-bold text-brand text-2xl leading-none">3.</span>
-              <p class="opacity-80">We move only where opening feels possible and safe for you.</p>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- Closing Quote -->
@@ -286,7 +297,7 @@
     <!-- Top wave overlay -->
     <div class="absolute top-0 left-0 w-full z-10" style="height: 80px;">
       <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="w-full h-full block">
-        <path d="M0,0 L1440,0 L1440,40 C1080,70 1080,10 720,40 C360,70 360,10 0,40 Z" fill="#BCD7F0"/>
+        <path d="M0,0 L1440,0 L1440,40 C1080,70 1080,10 720,40 C360,70 360,10 0,40 Z" fill="#E2EEF9"/>
         <path d="M1440,40 C1080,70 1080,10 720,40 C360,70 360,10 0,40" fill="none" stroke="#a3c4d1" stroke-width="1.5"/>
       </svg>
     </div>

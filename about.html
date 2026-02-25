@@ -109,26 +109,30 @@
         </div>
       </div>
 
+
       <!-- Book Consultation Button -->
       <div class="mt-16 lg:mt-20">
-        <a href="https://cal.com/helen-maria/consultation" target="_blank"
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/da-ewert/30min'});return false;"
           class="bg-brand-dark text-white text-xs font-medium tracking-widest uppercase px-6 py-2.5 rounded-tr-2xl rounded-bl-2xl hover:bg-brand-dark/90 transition-all shadow-md">
-          Book a consultation
+          Schedule a Session
         </a>
       </div>
 
-    </div>
+      <!-- Calendly widget begin -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <!-- Calendly widget end -->
 
-    <!-- Bottom Wave overlay connecting image to footer -->
-    <div class="absolute bottom-0 left-0 w-full z-10" style="height: 100px;">
-      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="w-full h-full block">
-        <!-- Footer color fill at bottom -->
-        <path d="M0,50 C360,20 360,80 720,50 C1080,20 1080,80 1440,50 L1440,100 L0,100 Z" fill="#D7EBFE" />
-        <!-- Thin wave line -->
-        <path d="M0,50 C360,20 360,80 720,50 C1080,20 1080,80 1440,50" fill="none" stroke="#a3c4d1"
-          stroke-width="1.5" />
-      </svg>
-    </div>
+      <!-- Bottom Wave overlay connecting image to footer -->
+      <div class="absolute bottom-0 left-0 w-full z-10" style="height: 100px;">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="w-full h-full block">
+          <!-- Footer color fill at bottom -->
+          <path d="M0,50 C360,20 360,80 720,50 C1080,20 1080,80 1440,50 L1440,100 L0,100 Z" fill="#D7EBFE" />
+          <!-- Thin wave line -->
+          <path d="M0,50 C360,20 360,80 720,50 C1080,20 1080,80 1440,50" fill="none" stroke="#a3c4d1"
+            stroke-width="1.5" />
+        </svg>
+      </div>
   </main>
 
   <!-- ===================== FOOTER ===================== -->
